@@ -31,9 +31,14 @@ export function AdBase({
 
   const clientId = siteConfig.ads.clientId;
   const isConfigured =
-    clientId &&
-    clientId.startsWith('ca-pub-') &&
-    clientId !== 'ca-pub-2147739006413698';
+    typeof clientId === 'string' &&
+    /^ca-pub-\d+$/.test(clientId);
+
+  // console.log('[AdSense Debug]', {
+  //   clientId,
+  //   enabled: siteConfig.ads.enabled,
+  //   isConfigured,
+  // });
 
   useEffect(() => {
     if (!isConfigured) return;
