@@ -36,10 +36,10 @@ export const siteConfig = {
     enabled: true,
     clientId: process.env.ADSENSE_CLIENT || '',
     slots: {
-      homepageBanner: '1234567890',
-      inArticle: '2345678901',
-      sidebar: '3456789012',
-      relatedArticles: '4567890123',
+      homepageBanner: '2025741496',
+      inArticle: '4106953231',
+      sidebar: '2605245862',
+      relatedArticles: '3723809852',
     },
   },
   analytics: {
