@@ -1,0 +1,78 @@
+---
+title: "Panduan Dasar Gas Fee pada Blockchain: Cara Hemat Biaya Transaksi saat Berburu Airdrop"
+slug: "panduan-gas-fee-blockchain"
+description: "Pelajari cara perhitungan gas fee, satuan Gwei, mekanisme EIP-1559, dan trik menghemat biaya transaksi on-chain saat berburu airdrop kripto."
+category: "Tutorial"
+tags:
+  - gas-fee
+  - gwei
+  - ethereum
+  - layer-2
+  - tutorial
+author: "Tim Editorial AirdropNews"
+publishedAt: "2026-10-03"
+updatedAt: "2026-10-08"
+featured: false
+spotlight: false
+coverImage: "/images/gas-fee.svg"
+coverImageAlt: "Ilustrasi Panduan Dasar Gas Fee Blockchain"
+readingTime: 5
+sources:
+  - title: "Ethereum.org - Gas and Fees Explained"
+    url: "https://ethereum.org/en/developers/docs/gas/"
+  - title: "Etherscan Gas Tracker"
+    url: "https://etherscan.io/gastracker"
+---
+
+## Apa Sebenarnya Gas Fee Itu?
+
+Dalam komputasi blockchain, **gas fee** adalah biaya kompensasi komputasi yang wajib dibayarkan oleh pengguna kepada para validator atau penambang (*miners*) agar transaksi atau eksekusi smart contract diproses dan dicatat ke dalam blok.
+
+Sama seperti mobil yang membutuhkan bensin untuk melaju dari titik A ke titik B, setiap operasi on-chain—mulai dari transfer saldo sederhana hingga interaksi rumit di protokol DeFi—memerlukan sejumlah "gas".
+
+---
+
+## Rumus Dasar Perhitungan Gas Fee (EIP-1559)
+
+Di jaringan Ethereum dan kompatibel EVM, sistem gas fee diatur berdasarkan standar **EIP-1559** dengan formula berikut:
+
+```text
+Total Gas Fee = Gas Units × (Base Fee + Priority Fee)
+```
+
+1. **Gas Limit (Gas Units):** Jumlah kapasitas komputasi maksimum yang dialokasikan. Transfer koin standar biasanya membutuhkan 21.000 gas units, sementara interaksi swap DEX membutuhkan 120.000 hingga 250.000 units.
+2. **Base Fee:** Tarif dasar minimum per unit gas yang ditentukan oleh protokol sesuai tingkat kepadatan jaringan. Komponen ini langsung dimusnahkan (*burned*).
+3. **Priority Fee (Tip):** Biaya tip tambahan yang diberikan langsung kepada validator agar transaksi Anda diprioritaskan lebih cepat.
+4. **Gwei:** Satuan denominasi kecil dari Ether (1 Gwei = 0.000000001 ETH atau 10^-9 ETH).
+
+---
+
+## Mengapa Gas Fee Bisa Melonjak Sangat Tinggi?
+
+Blockchain publik memiliki kapasitas blok yang terbatas. Ketika ribuan pengguna berusaha melakukan transaksi di saat yang bersamaan—misalnya saat minting koleksi NFT populer atau peluncuran token viral—terjadi lelang biaya (*gas war*). Pengguna yang rela membayar Gwei lebih tinggi akan dipilih terlebih dahulu oleh validator.
+
+---
+
+## 5 Trik Menghemat Gas Fee saat Berburu Airdrop
+
+Bagi para pemburu airdrop, biaya transaksi adalah beban modal utama. Berikut strategi meminimalkan pengeluaran on-chain:
+
+### 1. Pantau Jam Sibuk Global (Waktu Terbaik untuk Transaksi)
+Kepadatan jaringan Ethereum biasanya berada di titik terendah pada:
+- **Akhir Pekan (Sabtu & Minggu malam waktu Indonesia).**
+- **Dini Hari (pukul 02:00 – 06:00 WIB)** saat pasar Amerika Serikat sedang istirahat dan pasar Asia belum aktif sepenuhnya.
+Gunakan alat pemantau seperti *Etherscan Gas Tracker* atau bot Telegram gas alert.
+
+### 2. Manfaatkan Jaringan Layer 2 (L2)
+Alih-alih melakukan seluruh transaksi di Layer 1 Ethereum yang mahal, fokuslah pada jaringan Layer 2 seperti Arbitrum, Optimism, zkSync Era, Base, dan Linea. Biaya transaksi di L2 sering kali 90% hingga 99% lebih murah berkat teknologi rollups. Pelajari mekanismenya di artikel [Apa Itu Layer 2 Ethereum](/artikel/apa-itu-layer-2-ethereum).
+
+### 3. Sesuaikan Gas Limit Manual di Wallet
+Sebagian dompet mengatur estimasi gas default terlalu tinggi agar transaksi cepat selesai. Anda dapat memilih mode *Low* atau *Market* jika transaksi Anda tidak mendesak. Namun jangan menurunkan Gas Limit di bawah estimasi yang dibutuhkan kontrak karena transaksi bisa gagal (*Out of Gas*) dan biaya tetap hangus!
+
+### 4. Gabungkan Rangkaian Transaksi (Batching)
+Beberapa dApp modern mendukung fitur batch transactions atau account abstraction (ERC-4337), di mana Anda dapat melakukan approve dan swap sekaligus dalam satu klik tanpa membayar dua kali biaya komputasi.
+
+### 5. Selalu Sisakan Saldo Cadangan untuk Gas Keluar
+Jangan pernah menukar 100% saldo ETH atau koin asli jaringan Anda menjadi token lain. Jika saldo native habis, Anda tidak akan bisa melakukan transaksi apa pun untuk memindahkan aset tersebut kembali.
+
+Pelajari juga persiapan dompet yang tepat di [Panduan Airdrop Crypto untuk Pemula](/artikel/panduan-airdrop-pemula).

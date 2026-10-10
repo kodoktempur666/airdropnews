@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F8F7F2"/>
+  <defs>
+    <pattern id="grid-keamanan-wallet.svg" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5DE" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid-keamanan-wallet.svg)" />
+
+  <!-- Drop Shadow Card -->
+  <rect x="96" y="96" width="1008" height="438" rx="12" fill="#171717"/>
+  <!-- Main Card -->
+  <rect x="88" y="88" width="1008" height="438" rx="12" fill="#8EC5FF" stroke="#171717" stroke-width="6"/>
+
+  <!-- Brand & Category Badges -->
+  <rect x="140" y="140" width="150" height="40" rx="4" fill="#171717"/>
+  <text x="155" y="166" font-family="system-ui, sans-serif" font-weight="900" font-size="16" fill="#FFE45C" letter-spacing="1">AIRDROPNEWS</text>
+
+  <rect x="306" y="140" width="130" height="40" rx="4" fill="#FFE45C" stroke="#171717" stroke-width="2.5"/>
+  <text x="325" y="165" font-family="system-ui, sans-serif" font-weight="800" font-size="15" fill="#171717">TUTORIAL</text>
+
+  <!-- Title -->
+  <text x="140" y="270" font-family="system-ui, sans-serif" font-weight="900" font-size="48" fill="#171717">Keamanan Wallet Crypto</text>
+  <text x="140" y="330" font-family="system-ui, sans-serif" font-weight="600" font-size="26" fill="#262626">Cara Aman Simpan Seed Phrase & Tangkal Phishing</text>
+
+  <!-- Tags -->
+  <rect x="140" y="420" width="180" height="44" rx="6" fill="#FFFFFF" stroke="#171717" stroke-width="3"/>
+  <text x="165" y="448" font-family="system-ui, sans-serif" font-weight="800" font-size="16" fill="#171717"># ANTI-DRAINER</text>
+
+  <rect x="336" y="420" width="190" height="44" rx="6" fill="#FFFFFF" stroke="#171717" stroke-width="3"/>
+  <text x="360" y="448" font-family="system-ui, sans-serif" font-weight="800" font-size="16" fill="#171717"># AIRDROPNEWS.MY.ID</text>
+</svg>

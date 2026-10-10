@@ -1,26 +1,177 @@
 @import "tailwindcss";
 
+@theme {
+  --color-neo-bg: #F8F7F2;
+  --color-neo-black: #171717;
+  --color-neo-yellow: #FFE45C;
+  --color-neo-green: #B8F28B;
+  --color-neo-blue: #8EC5FF;
+  --color-neo-pink: #FF90E8;
+  --color-neo-orange: #FFAA00;
+
+  --font-heading: var(--font-heading), 'Space Grotesk', system-ui, sans-serif;
+  --font-sans: var(--font-sans), 'Inter', system-ui, sans-serif;
+
+  --shadow-neo: 4px 4px 0px #171717;
+  --shadow-neo-sm: 2px 2px 0px #171717;
+  --shadow-neo-lg: 6px 6px 0px #171717;
+}
+
 :root {
-  --background: #ffffff;
+  --background: #F8F7F2;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8F7F2;
+  color: #171717;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), system-ui, -apple-system, sans-serif;
+  color: #171717;
+}
+
+/* Custom Neo-Brutalist Utility Classes */
+.neo-card {
+  background-color: #ffffff;
+  border: 2.5px solid #171717;
+  box-shadow: 4px 4px 0px #171717;
+}
+
+.neo-card-yellow {
+  background-color: #FFE45C;
+  border: 2.5px solid #171717;
+  box-shadow: 4px 4px 0px #171717;
+}
+
+.neo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: 2.5px solid #171717;
+  box-shadow: 3px 3px 0px #171717;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.neo-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #171717;
+}
+
+.neo-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px #171717;
+}
+
+.neo-badge {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.6rem;
+  border: 2px solid #171717;
+  box-shadow: 2px 2px 0px #171717;
+}
+
+/* Article Prose styling */
+.article-prose {
+  color: #1f2937;
+  line-height: 1.8;
+  font-size: 1.0625rem;
+}
+
+.article-prose h2 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2.5px solid #171717;
+}
+
+.article-prose h3 {
+  font-size: 1.3rem;
+  font-weight: 750;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-prose p {
+  margin-bottom: 1.3rem;
+}
+
+.article-prose ul {
+  list-style-type: disc;
+  padding-left: 1.6rem;
+  margin-bottom: 1.3rem;
+}
+
+.article-prose ol {
+  list-style-type: decimal;
+  padding-left: 1.6rem;
+  margin-bottom: 1.3rem;
+}
+
+.article-prose li {
+  margin-bottom: 0.5rem;
+}
+
+.article-prose blockquote {
+  background-color: #FFF9DB;
+  border-left: 5px solid #171717;
+  border-right: 2px solid #171717;
+  border-top: 2px solid #171717;
+  border-bottom: 2px solid #171717;
+  box-shadow: 3px 3px 0px #171717;
+  padding: 1rem 1.25rem;
+  margin: 1.75rem 0;
+  font-weight: 500;
+}
+
+.article-prose a {
+  color: #171717;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: background-color 0.15s;
+}
+
+.article-prose a:hover {
+  background-color: #FFE45C;
+}
+
+.article-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  border: 2.5px solid #171717;
+  box-shadow: 4px 4px 0px #171717;
+  background: white;
+}
+
+.article-prose th {
+  background-color: #FFE45C;
+  border: 2px solid #171717;
+  padding: 0.75rem 1rem;
+  font-weight: 800;
+  text-align: left;
+}
+
+.article-prose td {
+  border: 1.5px solid #171717;
+  padding: 0.75rem 1rem;
+}
+
+.article-prose hr {
+  border: none;
+  border-top: 2.5px dashed #171717;
+  margin: 2.5rem 0;
 }

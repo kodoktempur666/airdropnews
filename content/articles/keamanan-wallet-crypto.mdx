@@ -1,0 +1,83 @@
+---
+title: "Cara Membuat dan Mengamankan Wallet Crypto: Bebas Drainer & Phishing"
+slug: "keamanan-wallet-crypto"
+description: "Panduan komprehensif mengamankan dompet non-kustodian, mengelola seed phrase secara offline, dan mencegah serangan wallet drainer saat berinteraksi di Web3."
+category: "Tutorial"
+tags:
+  - wallet
+  - keamanan
+  - phishing
+  - drainer
+  - web3
+author: "Tim Editorial AirdropNews"
+publishedAt: "2026-10-07"
+updatedAt: "2026-10-09"
+featured: false
+spotlight: false
+coverImage: "/images/keamanan-wallet.svg"
+coverImageAlt: "Ilustrasi Keamanan Wallet Crypto"
+readingTime: 6
+sources:
+  - title: "Revoke.cash Security Guide"
+    url: "https://revoke.cash/learn"
+  - title: "Rabby Wallet Security Architecture"
+    url: "https://rabby.io"
+---
+
+## Mengapa Keamanan Wallet Sangat Krusial?
+
+Dalam dunia desentralisasi Web3, berlaku prinsip mutlak: **"Not your keys, not your coins."** Tidak ada layanan pelanggan yang dapat membatalkan transaksi atau mengembalikan dana jika Anda salah menandatangani transaksi berbahaya (*malicious signature*) atau kehilangan *secret recovery phrase* (seed phrase).
+
+Bagi pemburu airdrop yang sering menghubungkan wallet ke protokol baru, risiko terkena perangkap *wallet drainer* atau tautan *phishing* sangat tinggi. Artikel ini menyajikan panduan perlindungan berlapis yang wajib Anda terapkan.
+
+---
+
+## 3 Aturan Emas Mengelola Seed Phrase
+
+1. **Jangan Pernah Simpan Seed Phrase secara Digital:**
+   Jangan pernah menyimpan foto kata pemulihan di galeri ponsel, cloud storage (Google Drive, iCloud), aplikasi catatan, pesan WhatsApp, atau email. Malware pembaca clipboard dan kebocoran akun cloud adalah pintu masuk utama peretasan.
+
+2. **Gunakan Media Fisik yang Tahan Kerusakan:**
+   Catat 12 atau 24 kata pemulihan Anda di atas kertas berkualitas tebal menggunakan pulpen anti-luntur, atau gunakan plat logam (*metal seed storage*) tahan api dan air. Simpan di tempat yang aman dan terkunci.
+
+3. **Tidak Ada Pihak yang Berhak Meminta Seed Phrase:**
+   Tidak ada tim developer, admin Discord, tim airdrop, atau form bantuan teknis resmi yang pernah memerlukan seed phrase Anda. Siapa pun yang memintanya dipastikan penipu 100%.
+
+---
+
+## Strategi Multi-Wallet: Memisahkan Dompet Utama dan Airdrop
+
+Bagi siapa pun yang aktif berinteraksi dengan protokol baru, **jangan pernah mencampuradukkan aset investasi dengan dompet berburu airdrop**. Terapkan arsitektur 3 dompet berikut:
+
+### 1. Cold / Storage Wallet (Dompet Brankas)
+Dompet berbasis hardware (seperti Ledger atau Trezor) atau dompet yang **tidak pernah dihubungkan ke dApp apa pun**. Wallet ini hanya digunakan untuk menerima dan menyimpan aset jangka panjang.
+
+### 2. Warm Wallet (Dompet Transit)
+Dompet perantara yang digunakan untuk membagi saldo operasional ke dompet airdrop.
+
+### 3. Burner / Hunting Wallet (Dompet Uji Coba)
+Dompet yang khusus digunakan untuk mengerjakan campaign airdrop, menguji testnet, dan berinteraksi dengan dApp baru. Saldo di dalam wallet ini dijaga seminimal mungkin sesuai kebutuhan gas fee. Jika terjadi hal yang tidak diinginkan, aset utama Anda tetap terlindungi.
+
+---
+
+## Memahami Izin Token (Token Allowances) & Cara Mencabutnya
+
+Saat Anda melakukan swap di bursa terdesentralisasi (DEX), smart contract akan meminta izin untuk membelanjakan token Anda (*Approve*). Sering kali pengguna menyetujui izin tak terbatas (*unlimited allowance*). Jika smart contract tersebut diretas atau memiliki kode berbahaya di kemudian hari, hacker dapat menguras seluruh saldo token terkait.
+
+### Cara Rutin Memeriksa dan Mencabut Izin:
+- Kunjungi alat verifikasi terpercaya seperti [Revoke.cash](https://revoke.cash).
+- Hubungkan dompet Anda pada jaringan yang relevan.
+- Periksa daftar smart contract yang memiliki akses ke token Anda.
+- Lakukan **Revoke** pada kontrak yang sudah tidak lagi Anda gunakan.
+
+---
+
+## Rekomendasi Ekstensi dan Tool Pengaman
+
+Untuk mengurangi risiko kesalahan manusiawi (*human error*), gunakan alat bantu berikut:
+
+- **Rabby Wallet:** Dompet Web3 dengan fitur simulasi transaksi bawaan. Rabby secara otomatis mendeteksi apakah smart contract yang Anda tuju pernah diaudit, terindikasi scam, atau mencoba menguras token.
+- **Pocket Universe / Wallet Guard:** Ekstensi browser pelindung yang mensimulasikan hasil transaksi sebelum Anda menekan tombol konfirmasi.
+- **Brave Browser / Dedicated Chrome Profile:** Buat profil browser terpisah khusus aktivitas Web3 yang bersih dari ekstensi lain yang berpotensi menyuntikkan script jahat.
+
+Untuk langkah preventif lainnya sebelum mencoba kampanye baru, simak juga [Checklist Keamanan Sebelum Mengikuti Airdrop](/artikel/checklist-keamanan-berburu-airdrop).
