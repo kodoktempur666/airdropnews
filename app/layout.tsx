@@ -75,6 +75,7 @@ export const metadata: Metadata = {
   verification: {
     google: siteConfig.verification.google,
   },
+
 };
 
 export default function RootLayout({
@@ -82,6 +83,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
+
   return (
     <html
       lang="id"
@@ -89,6 +93,7 @@ export default function RootLayout({
     >
       <head>
         <AdSenseScript clientId={siteConfig.ads.clientId} />
+        
         <JsonLd data={getOrganizationSchema()} />
         <JsonLd data={getWebSiteSchema()} />
       </head>

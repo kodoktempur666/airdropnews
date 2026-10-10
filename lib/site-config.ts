@@ -34,7 +34,7 @@ export const siteConfig = {
   },
   ads: {
     enabled: true,
-    clientId: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || '',
+    clientId: process.env.ADSENSE_CLIENT || '',
     slots: {
       homepageBanner: '1234567890',
       inArticle: '2345678901',
@@ -43,11 +43,12 @@ export const siteConfig = {
     },
   },
   analytics: {
-    gaId: process.env.NEXT_PUBLIC_GA_ID || '',
+    gaId: process.env.GA_ID || '',
   },
   verification: {
     google:
-      process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+      process.env.GOOGLE_SITE_VERIFICATION ||
       'gQ_moWGjiFB7QDY2tbwCst-bQhglefMtcHOD_S2mMCg',
   },
+  
 };

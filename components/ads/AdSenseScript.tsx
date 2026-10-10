@@ -10,7 +10,7 @@ export function AdSenseScript({ clientId }: Props) {
   if (
     !clientId ||
     !clientId.startsWith('ca-pub-') ||
-    clientId === 'ca-pub-XXXXXXXXXXXXXXXX'
+    clientId === 'ca-pub-2147739006413698'
   ) {
     return null;
   }
