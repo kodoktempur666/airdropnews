@@ -19,7 +19,7 @@ export function AdSenseScript({ clientId }: Props) {
     <Script
       id="adsbygoogle-init"
       strategy="afterInteractive"
-      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${clientId}`}
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2147739006413698`}
       crossOrigin="anonymous"
     />
   );
