@@ -33,7 +33,7 @@ export function AdBase({
   const isConfigured =
     clientId &&
     clientId.startsWith('ca-pub-') &&
-    clientId !== 'ca-pub-XXXXXXXXXXXXXXXX';
+    clientId !== 'ca-pub-2147739006413698';
 
   useEffect(() => {
     if (!isConfigured) return;

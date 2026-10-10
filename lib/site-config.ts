@@ -34,7 +34,7 @@ export const siteConfig = {
   },
   ads: {
     enabled: true,
-    clientId: process.env.ADSENSE_CLIENT || '',
+    clientId: process.env.ADSENSE_CLIENT || 'ca-pub-2147739006413698',
     slots: {
       homepageBanner: '2025741496',
       inArticle: '4106953231',
@@ -43,7 +43,7 @@ export const siteConfig = {
     },
   },
   analytics: {
-    gaId: process.env.GA_ID || '',
+    gaId: process.env.GA_ID || 'G-0EGMT6CQ40',
   },
   verification: {
     google:
